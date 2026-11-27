@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halde® — Modern Furniture Studio</title>
+  <meta name="description" content="Halde® designs chairs, tables, lamps and interior objects built with clarity, honest materials and timeless craft." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ INTRO LOADER (overlay on top of hero) ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__label"><span>Halde®</span><span class="muted">Loading the collection</span></div>
+    <div class="loader__count"><span class="loader__num">0</span></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">View</span></div>
+  <div class="hover-img" aria-hidden="true"><div class="hover-img__inner"></div></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-magnetic>Halde®</a>
+    <nav class="nav__links">
+      <a href="#collection" class="roll"><span data-text="Collection">Collection</span></a>
+      <a href="#pieces" class="roll"><span data-text="Pieces">Pieces</span></a>
+      <a href="#studio" class="roll"><span data-text="Studio">Studio</span></a>
+      <a href="#contact" class="roll"><span data-text="Contact">Contact</span></a>
+    </nav>
+    <button class="nav__burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#collection">Collection</a>
+    <a href="#pieces">Pieces</a>
+    <a href="#studio">Studio</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="locale">
+    <span class="locale__city">COPENHAGEN, DK</span>
+    <span class="locale__time" data-clock>00:00 AM</span>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="hero__intro">— a furniture studio shaping chairs, tables, lamps and objects through form, material, and timeless craft.</p>
+
+      <div class="hero__caption">
+        <span class="hero__caption-label">Now showing</span>
+        <span class="hero__caption-mask"><span class="hero__caption-name" data-hero-name>Arc Chair — Oak / Black</span></span>
+        <span class="hero__dots"><i class="on"></i><i></i><i></i><i></i><i></i></span>
+      </div>
+
+      <div class="hero__stage">
+        <div class="hero__stack" data-cursor="Shop">
+          <figure class="hero__card"><img src="img/chair-black.jpg" alt="Black Arc chair" /></figure>
+          <figure class="hero__card"><img src="img/lamp-pendant.jpg" alt="Dome pendant lamp" /></figure>
+          <figure class="hero__card"><img src="img/chair-yellow.jpg" alt="Yellow shell chairs" /></figure>
+          <figure class="hero__card"><img src="img/table-round.jpg" alt="Round side table" /></figure>
+          <figure class="hero__card"><img src="img/chair-shell.jpg" alt="White shell chair" /></figure>
+          <!-- extra frames only used in the intro flicker -->
+          <figure class="hero__card flick"><img src="img/sofa-green.jpg" alt="" /></figure>
+          <figure class="hero__card flick"><img src="img/lamp-floor.jpg" alt="" /></figure>
+          <figure class="hero__card flick"><img src="img/chair-houndstooth.jpg" alt="" /></figure>
+          <figure class="hero__card flick"><img src="img/obj-vases.jpg" alt="" /></figure>
+          <figure class="hero__card flick"><img src="img/stool.jpg" alt="" /></figure>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <h1 class="wordmark fit" aria-label="Halde®"><span class="wm-line"><span class="ch">H</span><span class="ch">a</span><span class="ch">l</span><span class="ch">d</span><span class="ch">e</span><span class="ch reg">®</span></span></h1>
+        <div class="hero__aside">
+          <div class="hero__year"><span>©</span><span>2016–26</span></div>
+          <a href="#studio" class="hero__scroll"><span class="hero__scroll-line"><i></i></span>Scroll to explore</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement" id="studio">
+      <h2 class="statement__title scrub-words"><span class="indent"></span>Halde® brings material <span class="inl"><img src="img/chair-shell.jpg" alt="" /></span> and form together, turning raw wood, steel and light <span class="inl"><img src="img/lamp-pendant.jpg" alt="" /></span> into objects that make a room feel like home <span class="inl"><img src="img/int-3.jpg" alt="" /></span></h2>
+      <div class="statement__body">
+        <p class="fade-up">At Halde®, every piece starts with a sketch and ends with a hand. We work as a small studio of designers and craftspeople, shaping each chair, table and lamp with intention and care. Joints are tested, curves are sanded twice, and nothing is added without reason.</p>
+        <p class="fade-up">We choose honest materials — FSC oak, recycled aluminium, hand-blown glass, natural linen — and let them speak. We produce in small batches, close to home, so every object can be repaired, not replaced.</p>
+      </div>
+    </section>
+
+    <!-- ============ ZOOM (pinned scale-up) ============ -->
+    <section class="zoom">
+      <div class="zoom__pin">
+        <h3 class="zoom__text zoom__text--l">Designed</h3>
+        <h3 class="zoom__text zoom__text--r">to be lived with.</h3>
+        <figure class="zoom__media"><img src="img/int-1.jpg" alt="Living room furnished by Halde" /></figure>
+        <div class="zoom__caption">
+          <span>The Living Collection</span>
+          <span>2026 — 24 new pieces</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Form in Stillness</span><i class="marquee__img"><img src="img/chair-black.jpg" alt="" /></i><span>Form in Stillness</span><i class="marquee__img"><img src="img/lamp-floor.jpg" alt="" /></i><span>Form in Stillness</span><i class="marquee__img"><img src="img/table-round.jpg" alt="" /></i><span>Form in Stillness</span><i class="marquee__img"><img src="img/obj-vases.jpg" alt="" /></i>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTION ============ -->
+    <section class="collection" id="collection">
+      <aside class="collection__side">
+        <div>
+          <h3 class="h-sm">Our Collection</h3>
+          <ol class="cindex">
+            <li class="is-active"><span>A /</span>Seating<em>32</em></li>
+            <li><span>B /</span>Tables<em>18</em></li>
+            <li><span>C /</span>Lighting<em>27</em></li>
+            <li><span>D /</span>Objects<em>63</em></li>
+          </ol>
+        </div>
+        <figure class="cpreview">
+          <img class="is-active" src="img/chair-tufted.jpg" alt="" />
+          <img src="img/table-round.jpg" alt="" />
+          <img src="img/lamp-floor.jpg" alt="" />
+          <img src="img/obj-dried.jpg" alt="" />
+        </figure>
+        <div class="collection__cta">
+          <p class="muted">Looking for furniture with clarity and soul? Let's find the right piece together.</p>
+          <a href="#pieces" class="link-arrow" data-magnetic>Explore Pieces <i class="arr">→</i></a>
+        </div>
+      </aside>
+
+      <div class="collection__list">
+        <article class="cat">
+          <span class="cat__letter">A /</span>
+          <h4 class="cat__title reveal-lines">Seating designed for long conversations — sculpted shells, solid oak frames, and upholstery that softens with time.</h4>
+          <ul class="pills"><li>Lounge Chairs</li><li>Dining Chairs</li><li>Bar Stools</li><li>Sofas &amp; Daybeds</li><li>Benches</li></ul>
+          <div class="cat__imgs">
+            <figure class="img-reveal" data-cursor="View"><img src="img/chair-houndstooth.jpg" alt="Houndstooth wingback chair" /></figure>
+            <figure class="img-reveal" data-cursor="View"><img src="img/sofa-green.jpg" alt="Green velvet sofa" /></figure>
+          </div>
+        </article>
+
+        <article class="cat">
+          <span class="cat__letter">B /</span>
+          <h4 class="cat__title reveal-lines">Tables built around gathering — dining, working, or simply setting down a cup with a little more care.</h4>
+          <ul class="pills"><li>Dining Tables</li><li>Coffee Tables</li><li>Side Tables</li><li>Consoles</li><li>Desks</li></ul>
+          <div class="cat__imgs">
+            <figure class="img-reveal" data-cursor="View"><img src="img/table-console.jpg" alt="Oak console table" /></figure>
+            <figure class="img-reveal" data-cursor="View"><img src="img/table-side.jpg" alt="Low side table" /></figure>
+          </div>
+        </article>
+
+        <article class="cat">
+          <span class="cat__letter">C /</span>
+          <h4 class="cat__title reveal-lines">Lighting that shapes atmosphere — soft, directional, and warm, from slender floor lamps to sculptural pendants.</h4>
+          <ul class="pills"><li>Pendant Lamps</li><li>Floor Lamps</li><li>Table Lamps</li><li>Wall Sconces</li><li>Dimmable LED</li></ul>
+          <div class="cat__imgs">
+            <figure class="img-reveal" data-cursor="View"><img src="img/lamp-floor.jpg" alt="Grey floor lamp" /></figure>
+            <figure class="img-reveal" data-cursor="View"><img src="img/lamp-pendant.jpg" alt="Pendant lamp on teal wall" /></figure>
+          </div>
+        </article>
+
+        <article class="cat">
+          <span class="cat__letter">D /</span>
+          <h4 class="cat__title reveal-lines">Objects that complete a room — ceramics, vessels and textiles chosen to live quietly alongside your furniture.</h4>
+          <ul class="pills"><li>Vases &amp; Vessels</li><li>Ceramics</li><li>Mirrors</li><li>Rugs &amp; Textiles</li><li>Shelving</li></ul>
+          <div class="cat__imgs">
+            <figure class="img-reveal" data-cursor="View"><img src="img/obj-vases.jpg" alt="Ceramic vases" /></figure>
+            <figure class="img-reveal" data-cursor="View"><img src="img/obj-dried.jpg" alt="Dried grass in a vase" /></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED PIECES (horizontal) ============ -->
+    <section class="pieces" id="pieces">
+      <div class="pieces__pin">
+        <div class="pieces__head">
+          <h3 class="h-xl split-chars">Selected Pieces</h3>
+          <div class="pieces__meta">
+            <span class="pieces__count"><b data-piece-idx>01</b> / 07</span>
+            <div class="pieces__progress"><span></span></div>
+          </div>
+        </div>
+        <div class="pieces__track">
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/chair-black.jpg" alt="" /><span class="tag">New</span></figure>
+            <div class="piece__meta"><div><h5>Arc Chair</h5><span class="muted">Oak / Black Shell</span></div><span class="price">€ 420</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/chair-tufted.jpg" alt="" /></figure>
+            <div class="piece__meta"><div><h5>Nube Lounge</h5><span class="muted">Bouclé / White Oak</span></div><span class="price">€ 1,280</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/lamp-floor.jpg" alt="" /><span class="tag">Bestseller</span></figure>
+            <div class="piece__meta"><div><h5>Stem Floor Lamp</h5><span class="muted">Powder-coated Steel</span></div><span class="price">€ 360</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/sofa-leather.jpg" alt="" /></figure>
+            <div class="piece__meta"><div><h5>Låg Sofa</h5><span class="muted">Cognac Leather</span></div><span class="price">€ 3,900</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/stool.jpg" alt="" /></figure>
+            <div class="piece__meta"><div><h5>Tall Stool</h5><span class="muted">Ash / Natural</span></div><span class="price">€ 210</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/chair-swivel.jpg" alt="" /><span class="tag">New</span></figure>
+            <div class="piece__meta"><div><h5>Orbit Swivel</h5><span class="muted">Wool Tweed</span></div><span class="price">€ 890</span></div>
+          </article>
+          <article class="piece" data-cursor="Shop">
+            <figure><img src="img/table-round.jpg" alt="" /></figure>
+            <div class="piece__meta"><div><h5>Dot Side Table</h5><span class="muted">Lacquered Birch</span></div><span class="price">€ 240</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="numbers">
+      <div class="numbers__head">
+        <h3 class="h-sm">In Numbers</h3>
+        <div>
+          <p class="muted">Ten years of slow, careful making — measured in pieces, places, and the people who live with them.</p>
+          <a href="#contact" class="link-arrow" data-magnetic>Visit the showroom <i class="arr">→</i></a>
+        </div>
+      </div>
+      <div class="numbers__grid">
+        <div class="stat"><i class="stat__line"></i><span class="stat__num" data-count="10">0</span><span class="stat__suf">y</span><p>Years designing and making furniture in Copenhagen.</p></div>
+        <div class="stat"><i class="stat__line"></i><span class="stat__num" data-count="140">0</span><span class="stat__suf">+</span><p>Original pieces across seating, tables, lighting and objects.</p></div>
+        <div class="stat"><i class="stat__line"></i><span class="stat__num" data-count="38">0</span><span class="stat__suf">&nbsp;</span><p>Countries where Halde® pieces now live.</p></div>
+        <div class="stat"><i class="stat__line"></i><span class="stat__num" data-count="96">0</span><span class="stat__suf">%</span><p>Of our wood is FSC certified or reclaimed.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ AWARDS ============ -->
+    <section class="awards">
+      <div class="awards__head">
+        <h3 class="h-xl split-chars">Our Awards</h3>
+        <a href="#pieces" class="link-arrow" data-magnetic>Our Work <i class="arr">→</i></a>
+      </div>
+      <ul class="awards__list">
+        <li data-img="img/chair-black.jpg"><span class="aw__name">Red Dot</span><span class="aw__cat">Product Design — Seating</span><span class="aw__x">×3</span></li>
+        <li data-img="img/lamp-pendant.jpg"><span class="aw__name">iF Design Award</span><span class="aw__cat">Lighting</span><span class="aw__x">×3</span></li>
+        <li data-img="img/sofa-green.jpg"><span class="aw__name">Wallpaper* Design Awards</span><span class="aw__cat">Best Sofa</span><span class="aw__x">×2</span></li>
+        <li data-img="img/table-console.jpg"><span class="aw__name">Dezeen Awards</span><span class="aw__cat">Furniture Design of the Year</span><span class="aw__x">×2</span></li>
+        <li data-img="img/chair-houndstooth.jpg"><span class="aw__name">German Design Award</span><span class="aw__cat">Excellent Product Design</span><span class="aw__x">×3</span></li>
+        <li data-img="img/obj-vases.jpg"><span class="aw__name">Formex Nova</span><span class="aw__cat">Interior Objects</span><span class="aw__x">×1</span></li>
+        <li data-img="img/int-2.jpg"><span class="aw__name">Frame Awards</span><span class="aw__cat">Residential Interior</span><span class="aw__x">×2</span></li>
+        <li data-img="img/lamp-floor.jpg"><span class="aw__name">Good Design</span><span class="aw__cat">Lighting &amp; Electrical</span><span class="aw__x">×3</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ FOUNDERS ============ -->
+    <section class="founders">
+      <div class="founders__text">
+        <p class="fade-up">Founded by Ida Halvorsen and Mads Delbo, Halde® began as a shared belief in how furniture should feel: calm, honest, and human. What started in a small workshop on the harbour has grown into a studio of makers bringing structure, material and craft to every piece we build.</p>
+        <a href="#contact" class="btn-pill" data-magnetic><span>Meet the Makers</span><i class="arr">→</i></a>
+      </div>
+      <figure class="img-reveal tall"><img src="img/int-6.jpg" alt="Halde showroom" /></figure>
+      <figure class="img-reveal tall offset"><img src="img/int-3.jpg" alt="Living room with Halde lounge chair" /></figure>
+    </section>
+
+    <!-- ============ SPACES (parallax gallery) ============ -->
+    <section class="spaces">
+      <div class="spaces__grid">
+        <div class="spaces__col" data-speed="-260">
+          <figure><img src="img/int-2.jpg" alt="" /></figure>
+          <figure><img src="img/chair-plant.jpg" alt="" /></figure>
+          <figure><img src="img/int-5.jpg" alt="" /></figure>
+        </div>
+        <div class="spaces__col" data-speed="140">
+          <figure><img src="img/lamp-pendant.jpg" alt="" /></figure>
+          <figure><img src="img/int-4.jpg" alt="" /></figure>
+          <figure><img src="img/sofa-leather.jpg" alt="" /></figure>
+        </div>
+        <div class="spaces__center">
+          <div class="spaces__sticky">
+            <span class="muted">Projects — 2016 / 2026</span>
+            <h3 class="h-xl split-chars">Spaces we've furnished.</h3>
+            <a href="#contact" class="btn-pill" data-magnetic><span>See Projects</span><i class="arr">→</i></a>
+          </div>
+        </div>
+        <div class="spaces__col" data-speed="-200">
+          <figure><img src="img/int-1.jpg" alt="" /></figure>
+          <figure><img src="img/chair-yellow.jpg" alt="" /></figure>
+          <figure><img src="img/int-6.jpg" alt="" /></figure>
+        </div>
+        <div class="spaces__col" data-speed="200">
+          <figure><img src="img/table-side.jpg" alt="" /></figure>
+          <figure><img src="img/int-3.jpg" alt="" /></figure>
+          <figure><img src="img/chair-swivel.jpg" alt="" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="partners">
+      <h3 class="partners__title"><span>Our Partners</span></h3>
+      <div class="logos">
+        <div class="logos__track">
+          <span class="lg lg-1">NORRØ</span><span class="lg lg-2">casa vela</span><span class="lg lg-3">FJORD/Hotels</span><span class="lg lg-4">Maison Ode</span><span class="lg lg-5">ARKEN</span><span class="lg lg-6">studio lumo</span><span class="lg lg-7">Vær&amp;Co</span><span class="lg lg-8">OSLO HAUS</span>
+          <span class="lg lg-1">NORRØ</span><span class="lg lg-2">casa vela</span><span class="lg lg-3">FJORD/Hotels</span><span class="lg lg-4">Maison Ode</span><span class="lg lg-5">ARKEN</span><span class="lg lg-6">studio lumo</span><span class="lg lg-7">Vær&amp;Co</span><span class="lg lg-8">OSLO HAUS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REFLECTIONS ============ -->
+    <section class="reflections">
+      <h3 class="h-sm">Client Reflections</h3>
+      <div class="reflections__grid">
+        <blockquote class="quote tilt">
+          <p>“The Arc chairs changed how our dining room feels. They're light, quiet and somehow look better every year.”</p>
+          <footer><img src="img/int-1.jpg" alt="" /><div><strong>Sofie N.</strong><span class="muted">Homeowner, Aarhus</span></div></footer>
+        </blockquote>
+        <blockquote class="quote quote--dark tilt">
+          <p>“We furnished forty hotel rooms with Halde®. Every detail — from the joints to the packaging — was considered.”</p>
+          <footer><img src="img/int-2.jpg" alt="" /><div><strong>Lars Brekke</strong><span class="muted">FJORD Hotels</span></div></footer>
+        </blockquote>
+        <blockquote class="quote tilt">
+          <p>“Their lighting gives our studio a warmth no spec sheet can describe. Clients always ask where the pendants are from.”</p>
+          <footer><img src="img/int-5.jpg" alt="" /><div><strong>Camille Ode</strong><span class="muted">Maison Ode</span></div></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS (pinned, dark) ============ -->
+    <section class="process">
+      <div class="process__pin">
+        <div class="process__left">
+          <h3 class="h-sm">The Process</h3>
+          <div class="process__counter"><span class="process__num">01</span><span class="process__total">/04</span></div>
+        </div>
+        <div class="process__media">
+          <figure class="pm"><img src="img/int-4.jpg" alt="" /></figure>
+          <figure class="pm"><img src="img/chair-plant.jpg" alt="" /></figure>
+          <figure class="pm"><img src="img/table-console.jpg" alt="" /></figure>
+          <figure class="pm"><img src="img/int-1.jpg" alt="" /></figure>
+        </div>
+        <div class="process__steps">
+          <div class="process__bar"><span></span></div>
+          <div class="step"><h4>Sketch</h4><p>Every piece begins on paper. We study how a body sits, how a hand reaches, how light falls — and draw until the form feels inevitable.</p></div>
+          <div class="step"><h4>Prototype</h4><p>Full-scale mock-ups in foam, plywood and steel. We sit, lean, lift and live with them for weeks before a single line is final.</p></div>
+          <div class="step"><h4>Craft</h4><p>Small-batch production with workshops within 200 km of Copenhagen. Solid joints, natural oils and finishes that age beautifully.</p></div>
+          <div class="step"><h4>Live &amp; Beyond</h4><p>Delivered in plastic-free packaging, with a 10-year guarantee and spare parts for life. We repair, refinish and take pieces back.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BESPOKE / PRICING ============ -->
+    <section class="pricing">
+      <div class="pricing__head">
+        <h3 class="h-xl split-chars">Bespoke</h3>
+        <div class="toggle" role="tablist">
+          <button class="toggle__btn is-active" data-mode="home">Residential</button>
+          <button class="toggle__btn" data-mode="trade">Trade <em>–20%</em></button>
+          <span class="toggle__pill"></span>
+        </div>
+      </div>
+      <p class="pricing__intro muted">Need something made for your space? Every package includes design consultation, material samples and white-glove delivery.</p>
+      <div class="pricing__grid">
+        <div class="plan tilt">
+          <h4>Single Piece</h4>
+          <ul><li>One custom piece</li><li>Choice of 12 woods &amp; finishes</li><li>2 design revisions</li><li>Delivery in 6–8 weeks</li></ul>
+          <div class="plan__price"><span class="muted">Starting from</span><strong>€<span data-price="1200">1,200</span></strong></div>
+        </div>
+        <div class="plan plan--dark tilt">
+          <h4>Room</h4>
+          <ul><li>Up to 6 coordinated pieces</li><li>Lighting plan included</li><li>Unlimited revisions</li><li>On-site measurement</li></ul>
+          <div class="plan__price"><span class="muted">Starting from</span><strong>€<span data-price="6800">6,800</span></strong></div>
+        </div>
+        <div class="plan tilt">
+          <h4>Full Interior</h4>
+          <ul><li>Complete home or space</li><li>Dedicated design lead</li><li>Custom objects &amp; textiles</li><li>Installation &amp; styling</li></ul>
+          <div class="plan__price"><span class="muted">Starting from</span><strong>€<span data-price="24000">24,000</span></strong></div>
+        </div>
+      </div>
+      <a href="#contact" class="link-arrow center" data-magnetic>Let's Talk <i class="arr">→</i></a>
+    </section>
+
+    <!-- ============ JOURNAL ============ -->
+    <section class="journal">
+      <div class="journal__head">
+        <h3 class="h-xl split-chars">Studio Notes</h3>
+        <a href="#" class="link-arrow" data-magnetic>Read All <i class="arr">→</i></a>
+      </div>
+      <div class="journal__grid">
+        <a href="#" class="post" data-cursor="Read">
+          <figure class="img-reveal"><img src="img/int-5.jpg" alt="" /></figure>
+          <span class="muted">November 12, 2026</span>
+          <h5>Why we oil, not lacquer: the slow beauty of natural finishes</h5>
+        </a>
+        <a href="#" class="post" data-cursor="Read">
+          <figure class="img-reveal"><img src="img/int-2.jpg" alt="" /></figure>
+          <span class="muted">October 03, 2026</span>
+          <h5>Designing the Dome pendant — 47 prototypes and one perfect curve</h5>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <h3 class="cta__title scrub-words">Do you feel ready to bring a Halde® piece home?</h3>
+      <a href="#contact" class="btn-pill big" data-magnetic><span>Visit the Showroom</span><i class="arr">→</i></a>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="contact">
+      <div class="faq__side">
+        <h3 class="h-xl split-chars">Let's Talk!</h3>
+        <p class="muted">Still curious? Ask us anything about materials, delivery or custom work.</p>
+        <a href="mailto:hello@halde.studio" class="link-arrow" data-magnetic>Ask a question <i class="arr">→</i></a>
+      </div>
+      <div class="faq__list">
+        <details class="qa"><summary><span>How long does delivery take?</span><i></i></summary><div class="qa__a"><p><b>A</b> In-stock pieces ship within 5 working days across Europe. Made-to-order pieces take 6–10 weeks, and we keep you updated at every stage.</p></div></details>
+        <details class="qa"><summary><span>Which materials do you use?</span><i></i></summary><div class="qa__a"><p><b>A</b> FSC-certified oak, ash and walnut; recycled aluminium and steel; natural linen, wool and leather from tanneries we visit ourselves.</p></div></details>
+        <details class="qa"><summary><span>Can I see pieces before buying?</span><i></i></summary><div class="qa__a"><p><b>A</b> Yes — visit our Copenhagen showroom, or order free material samples sent to your door within the EU.</p></div></details>
+        <details class="qa"><summary><span>Do you offer a warranty?</span><i></i></summary><div class="qa__a"><p><b>A</b> Every Halde® piece comes with a 10-year structural guarantee and lifetime access to spare parts and refinishing.</p></div></details>
+        <details class="qa"><summary><span>Do you work with architects and hotels?</span><i></i></summary><div class="qa__a"><p><b>A</b> Absolutely. Our Trade programme offers 20% off, CAD files, custom finishes and a dedicated project manager.</p></div></details>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (curtain reveal) ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="muted">Showroom</span>
+        <p>Havnegade 21<br />1058 Copenhagen K<br />Denmark</p>
+      </div>
+      <div class="footer__col">
+        <span class="muted">Explore</span>
+        <a href="#collection" class="roll"><span data-text="Collection">Collection</span></a>
+        <a href="#pieces" class="roll"><span data-text="Pieces">Pieces</span></a>
+        <a href="#studio" class="roll"><span data-text="Studio">Studio</span></a>
+        <a href="#contact" class="roll"><span data-text="Contact">Contact</span></a>
+      </div>
+      <div class="footer__col">
+        <span class="muted">Follow</span>
+        <a href="#" class="roll"><span data-text="Instagram">Instagram</span></a>
+        <a href="#" class="roll"><span data-text="Pinterest">Pinterest</span></a>
+        <a href="#" class="roll"><span data-text="LinkedIn">LinkedIn</span></a>
+      </div>
+      <div class="footer__col footer__news">
+        <span class="muted">Newsletter</span>
+        <form class="news" onsubmit="event.preventDefault(); this.classList.add('sent');">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit" aria-label="Subscribe">→</button>
+          <span class="news__ok">Thank you — see you in your inbox.</span>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="muted">© 2026 Halde® Studio ApS</span>
+      <span class="muted">Privacy Policy · Terms</span>
+      <a href="#top" class="roll back-top"><span data-text="Back to top ↑">Back to top ↑</span></a>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
